@@ -10,9 +10,9 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="bg-gray-500 border-b-4 border-black p-6 mt-0"> {/* Add p-6 for padding and my-4 for margin on the Y-axis */}
-        <div className="container mx-auto">
-          <div className="flex items-center justify-between">
+      <div className="bg-gray-200 border-b-1 shadow-lg border-black pb-6 pt-0.5  mt-0"> {/* Add p-6 for padding and my-4 for margin on the Y-axis */}
+        <div className="container mx-auto flex items-end justify-between">
+          <div className="flex items-center ">
             <div className="font-bold text-3xl pt-10">My Website</div> {/* Increase the text size to 3xl */}
             <div className="md:hidden flex items-center">
                 <button
@@ -44,7 +44,7 @@ const Navbar = () => {
           {/* Mobile menu */}
               {isOpen && (
               <div className="md:hidden">
-                <a className="block py-2 px-4 text-black hover:bg-gray-300" href="#home">
+                <a className="block py-2 px-4 text-black hover:bg-gray-500" href="#home">
                   Home
                 </a>
                 <a className="block py-2 px-4 text-black hover:bg-gray-300" href="#about">
@@ -60,28 +60,38 @@ const Navbar = () => {
             )}
         {/*
           {/* Desktop menu */}
-          <div className="hidden md:flex space-x-10 justify-center ">
+          <div className="hidden md:flex space-x-10 justify-end ">
             <div className="ml-2">
-              <a className="px-20 py-4 bg-gray-200 hover:bg-gray-300 rounded" href="#home">
+              <a className="px-10 py-4 bg-gray-200 hover:bg-gray-300 rounded" href="#home">
                 <span className="text-black text-lg font-semibold">Home</span>
               </a>
             </div>
             <div className="ml-2">
-              <a className="px-20 py-4 bg-gray-200 hover:bg-gray-300 rounded" href="#about">
+              <a className="px-10 py-4 bg-gray-200 hover:bg-gray-300 rounded" href="#about">
                 <span className="text-black text-lg font-semibold">About</span>
               </a>
             </div>
             <div className="ml-2">
-              <a className="px-20 py-4 bg-gray-200 hover:bg-gray-300 rounded" href="#services">
+              <a className="px-10 py-4 bg-gray-200 hover:bg-gray-300 rounded" href="#services">
                 <span className="text-black text-lg font-semibold">Services</span>
               </a>
             </div>
-            <div className="ml-2">
-              <a className="px-20 py-4 bg-gray-200 hover:bg-gray-300 rounded" href="#contact">
+            <div className="ml-2 pr-9" >
+              <a className="px-10 py-4  bg-gray-200 hover:bg-gray-300 rounded" href="#contact">
                 <span className="text-black text-lg font-semibold">Contact</span>
               </a>
             </div>
           </div>
+
+          <div className="flex items-center ">
+            <img
+              src="/path/to/user-logo.png" // Replace with your user logo image path
+              alt="User Logo"
+              className="h-8 w-8 rounded-full"
+            />
+            <span className="ml-2  text-white font-medium">Hello, user_name</span>
+          </div>
+    
         </div>
       </div>
     </nav>
