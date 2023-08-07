@@ -10,10 +10,10 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="bg-gray-200 border-b-1 shadow-lg border-black pb-6 pt-0.5  mt-0"> {/* Add p-6 for padding and my-4 for margin on the Y-axis */}
+      <div className="bg-gray-200 border-b-1 shadow-lg border-black pb-6 pt-0.5  mt-0 mb-4"> {/* Add p-6 for padding and my-4 for margin on the Y-axis */}
         <div className="container mx-auto flex items-end justify-between">
           <div className="flex items-center ">
-            <div className="font-bold text-3xl pt-10">My Website</div> {/* Increase the text size to 3xl */}
+            <div className="font-bold text-3xl pt-10">HomoPedia</div> {/* Increase the text size to 3xl */}
             <div className="md:hidden flex items-center">
                 <button
                   className="focus:outline-none"
