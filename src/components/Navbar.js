@@ -11,10 +11,10 @@ const Navbar = () => {
   // };
 
   return (
-    <nav className="bg-gray-100 p-6 drop-shadow-md">
+    <nav className="fixed w-full  bg-gray-100 p-8 drop-shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="text-black text-2xl font-semibold">
-          My Website
+          Homopedia
         </a>
         <ul className="flex space-x-4">
           <li><a href="/" className="text-black">Home</a></li>
