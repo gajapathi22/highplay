@@ -12,7 +12,26 @@
   }
 }
 
-.border-rainbow-animate {
+/* .border-rainbow-animate {
   animation: rainbow 3s linear infinite;
+} */
+
+
+.border-rainbow-animate {
+  animation: rainbowBorder 2s infinite;
 }
+
+@keyframes rainbowBorder {
+  0% {
+    border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    border-image-slice: 1;
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+    border-image-slice: 1;
+  }
+}
+
+
+
 

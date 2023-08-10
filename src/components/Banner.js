@@ -11,7 +11,7 @@ const images = [
   image3,
   image4,
   image5
-  // Add more image paths as needed
+
 ];
 
 const Banner = () => {
@@ -34,35 +34,41 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      <button
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white font-bold text-xl bg-black rounded-full px-4 py-2"
-        onClick={goToPreviousImage}
-      >
-        &lt; Previous
-      </button>
-      <button
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white font-bold text-xl bg-black rounded-full px-4 py-2"
-        onClick={goToNextImage}
-      >
-        Next &gt;
-      </button>
-      {images.map((image, index) => (
-        <img
-          key={index}
-          src={image}
-          alt=""
-          className={`absolute top-0 left-0 w-[33.33%] h-auto transition-opacity duration-1000 ${
-            currentImage === index ? 'opacity-100' : 'opacity-0'
+    <div className="container ">
+      {/* <div className=" w-64 h-64"> */}
+        {/* <button
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white font-bold text-xl bg-black rounded-full px-4 py-2"
+          onClick={goToPreviousImage}
+          
+        >
+          &lt;
+        </button>
+
+        <button
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white font-bold text-xl bg-black rounded-full px-4 py-2"
+          onClick={goToNextImage}
+        >
+          &gt;
+        </button> */}
+
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt=""
+            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[44.44%] h-auto  border-black transition-opacity duration-1000 ${
+              currentImage === index ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'cover' }}
+          />
+        ))}
+
+        {/* <div
+          className={`absolute top-0 left-0 w-full h-full border-8 border-double border-transparent ${
+            currentImage >= 0 ? 'border-rainbow-animate' : ''
           }`}
-          style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'cover' }}
-        />
-      ))}
-      <div
-        className={`absolute top-0 left-0 w-full h-full border-8 border-double border-transparent ${
-          currentImage === 0 ? 'border-rainbow-animate' : ''
-        }`}
-      />
+        /> */}
+      {/* </div> */}
     </div>
   );
 };
