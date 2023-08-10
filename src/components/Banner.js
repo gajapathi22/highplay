@@ -15,6 +15,7 @@ const images = [
 ];
 
 const Banner = () => {
+
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -34,42 +35,22 @@ const Banner = () => {
   };
 
   return (
-    <div className="container ">
-      {/* <div className=" w-64 h-64"> */}
-        {/* <button
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white font-bold text-xl bg-black rounded-full px-4 py-2"
-          onClick={goToPreviousImage}
-          
-        >
-          &lt;
-        </button>
-
-        <button
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white font-bold text-xl bg-black rounded-full px-4 py-2"
-          onClick={goToNextImage}
-        >
-          &gt;
-        </button> */}
-
+    <div className="container mx-auto p-8">
+      <div className="flex justify-center mt-10">        
         {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt=""
-            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[44.44%] h-auto  border-black transition-opacity duration-1000 ${
-              currentImage === index ? 'opacity-100' : 'opacity-0'
-            }`}
-            style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'cover' }}
-          />
-        ))}
-
-        {/* <div
-          className={`absolute top-0 left-0 w-full h-full border-8 border-double border-transparent ${
-            currentImage >= 0 ? 'border-rainbow-animate' : ''
+        <img
+          key={index}
+          src={image}
+          alt=""
+          className={`absolute  w-128 h-128 rounded-xl transition-opacity duration-1000 ${
+            currentImage === index ? 'opacity-100' : 'opacity-0'
           }`}
-        /> */}
-      {/* </div> */}
-    </div>
+          style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'cover' }}
+        />
+      ))}
+        
+      </div>
+  </div>
   );
 };
 
