@@ -1,5 +1,6 @@
 // src/components/Navbar.js
 import React, { useState } from 'react';
+import backgroundImage from '../assets/images/lib4.jpg'
 import image1 from '../../src/assets/images/Banner1.jpg';
 
 
@@ -11,7 +12,15 @@ const Navbar = () => {
   // };
 
   return (
-    <nav className="fixed w-full  bg-gray-100 p-8 drop-shadow-md">
+    <nav className="fixed w-full  bg-gray-100 p-8 drop-shadow-xl">
+      <div
+        className="absolute top-0 left-0 w-full h-full"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: 'cover',
+          opacity: 0.7, // Adjust opacity as needed
+        }}
+      />
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="text-black text-2xl font-semibold">
           Homopedia

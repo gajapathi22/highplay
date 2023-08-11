@@ -33,17 +33,21 @@ const Banner = () => {
 
   return (
     
-    <div className="container mx-auto pt-20">
-      <div className="flex justify-center mt-20">        
+    <div className="container pt-20">
+      <div className="justify-center mt-20 ">        
         {images.map((image, index) => (
         <img
           key={index}
           src={image}
           alt=""
-          className={`absolute  w-5/6 h-3/6 rounded-xl transition-opacity duration-1000 ${
+          className={`absolute  w-5/6 h-4/6 rounded-xl transition-opacity duration-1000 ${
             currentImage === index ? 'opacity-100' : 'opacity-0'
           }`}
-          style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'cover' }}
+
+          style={{ maxWidth: '100%',
+                  maxHeight: '100%',
+                  objectFit: 'cover'
+                }}
         />
       ))}
        
