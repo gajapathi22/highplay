@@ -1,4 +1,4 @@
-/* tailwind.css (or your CSS file) */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,14 +10,14 @@
   100% {
     border-image-source: linear-gradient(45deg, #f00, #f08, #f0f, #80f, #00f, #08f, #0ff, #0f8, #0f0, #8f0, #ff0, #f80, #f00);
   }
-}
+} 
 
-/* .border-rainbow-animate {
+ .border-rainbow-animate {
   animation: rainbow 3s linear infinite;
-} */
+} 
 
 
-.border-rainbow-animate {
+ .border-rainbow-animate {
   animation: rainbowBorder 2s infinite;
 }
 
@@ -30,7 +30,7 @@
     border-image-source: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
     border-image-slice: 1;
   }
-}
+} 
 
 
 

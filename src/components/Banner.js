@@ -18,7 +18,7 @@ const Banner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -32,15 +32,15 @@ const Banner = () => {
   };
 
   return (
-    
-    <div className="container pt-20">
-      <div className="justify-center mt-20 ">        
+    <div className='relative p-10 bg-blue-200 mt-20'>
+    <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] ">
         {images.map((image, index) => (
+        <div className="relative h-[750px]  float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"> 
         <img
           key={index}
           src={image}
           alt=""
-          className={`absolute  w-5/6 h-4/6 rounded-xl transition-opacity duration-1000 ${
+          className={`block w-full  rounded-3xl ${
             currentImage === index ? 'opacity-100' : 'opacity-0'
           }`}
 
@@ -49,9 +49,10 @@ const Banner = () => {
                   objectFit: 'cover'
                 }}
         />
+      </div>
       ))}
        
-      </div>
+  </div>
   </div>
   );
 };
