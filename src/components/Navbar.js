@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import backgroundImage from '../assets/images/lib4.jpg';
 
-function onSignUpClick2(){
-  console.log("Hello");
-}
-const Navbar = ({ onSignUpClick }) => {
+const Navbar = ({ onSignUpClick,isLoggedIn }) => {
+
+const [isLoggedin,setisLoggedin] = useState(false);
   return (
     <nav className="fixed w-full bg-gray-100 p-8 drop-shadow-xl">
       <div
@@ -24,9 +23,13 @@ const Navbar = ({ onSignUpClick }) => {
           <li><a href="/about" className="text-black">About</a></li>
           <li><a href="/contact" className="text-black">Contact</a></li>
           <li>
-            <button onClick={onSignUpClick} className="text-black">
-              SignUp/Login
-            </button>
+          {isLoggedIn ? (
+              <button className="text-black">Hello User</button>
+            ) : (
+              <button onClick={onSignUpClick} className="text-black">
+                SignUp/Login
+              </button>
+            )}
           </li>
         </ul>
       </div>

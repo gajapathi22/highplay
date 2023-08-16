@@ -1,12 +1,12 @@
 import React from 'react';
-
+import image from '../assets/images/signup.jpeg';
 const SignUp = () => {
     return (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
             <div className="bg-white p-8 rounded-md shadow-md w-96">
                 <div className="mb-6">
                     <img
-                        src="path_to_banner_image" // Replace with your banner image path
+                        src={image} // Replace with your banner image path
                         alt="Banner"
                         className="w-full"
                     />
