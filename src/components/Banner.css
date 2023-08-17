@@ -1,0 +1,37 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes rainbow {
+  0% {
+    border-image-source: linear-gradient(45deg, #f00, #f80, #ff0, #8f0, #0f0, #0f8, #0ff, #08f, #00f, #80f, #f0f, #f08, #f00);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, #f00, #f08, #f0f, #80f, #00f, #08f, #0ff, #0f8, #0f0, #8f0, #ff0, #f80, #f00);
+  }
+} 
+
+ .border-rainbow-animate {
+  animation: rainbow 3s linear infinite;
+} 
+
+
+ .border-rainbow-animate {
+  animation: rainbowBorder 2s infinite;
+}
+
+@keyframes rainbowBorder {
+  0% {
+    border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    border-image-slice: 1;
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+    border-image-slice: 1;
+  }
+} 
+
+
+
+
