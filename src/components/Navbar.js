@@ -21,7 +21,7 @@ const Navbar = ({ onSignUpClick,isLoggedIn }) => {
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
-          opacity: 0.7, // Adjust opacity as needed
+          opacity: 1, // Adjust opacity as needed
         }}
       >
       <div className="container mx-auto flex justify-between items-center">
