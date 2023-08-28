@@ -29,7 +29,7 @@ export default function CardComponent() {
               <div className=" flex justify-center py-10">
                    <h1 className="text-6xl">Blogs</h1>
                 </div>
-            <div className="grid gap-2   pb-10 ml-12 lg:grid-cols-4">
+            <div className="grid gap-2   pb-10 ml-12 lg:grid-cols-4 md:grid-cols-2">
                 {posts.map((items, key) => (
                     <div className="card w-96 border-2  border-black p-1  rounded-xl bg-base-100 drop-shadow-xl" key={key}>
                         <figure>                               

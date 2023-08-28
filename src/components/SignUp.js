@@ -50,7 +50,12 @@ const SignUp = () => {
                     <button className="text-gray-600 font-medium hover:text-gray-800 transition duration-300">
                         Login with Facebook
                     </button>
+                </div> <div className="mt-4">
+                    <button className="pr-20 text-gray-600 font-medium mr-4 hover:text-gray-200 transition duration-300">
+                     Forgot Password
+                    </button>
                 </div>
+
             </div>
         </div>
     );
