@@ -3,8 +3,7 @@ import './Banner.css'; // Import the custom CSS file
 import image1 from '../../src/assets/images/lib1.jpg';
 import image2 from '../../src/assets/images/lib2.jpg';
 import image3 from '../../src/assets/images/lib3.jpg';
-import image4 from '../../src/assets/images/Banner4.png';
-import image5 from '../../src/assets/images/Banner5.jpeg';
+
 const images = [
   image1,
   image2,

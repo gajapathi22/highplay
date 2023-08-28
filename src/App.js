@@ -1,13 +1,14 @@
 import './App.css';
 import { BrowserRouter as Router,Routes, Route, BrowserRouter} from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Banner from './components/Banner';
+
 import SignUp from './components/SignUp';
-import CardComponent from './components/Blog';
+
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import { useState } from 'react';
+
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 
       <>
         <BrowserRouter>
+
           <Navbar onSignUpClick={() => setShowSignupBox(true)} /> 
          
           {showSignupBox && <SignUp onClose={() => setShowSignupBox(false)} />}
@@ -31,6 +33,7 @@ function App() {
           </div>
 
         </BrowserRouter>
+        
       </>
   );
 }

@@ -1,7 +1,7 @@
 // src/components/Navbar.js
 import React, { useState } from 'react';
 import backgroundImage from '../assets/images/lib4.jpg'
-import image1 from '../../src/assets/images/Banner1.jpg';
+
 
 
 const Navbar = ({ onSignUpClick,isLoggedIn }) => {
