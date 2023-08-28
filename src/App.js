@@ -19,12 +19,11 @@ function App() {
       <>
         <BrowserRouter>
           <Navbar onSignUpClick={() => setShowSignupBox(true)} /> 
-          <Banner />
-          <CardComponent/> 
+         
           {showSignupBox && <SignUp onClose={() => setShowSignupBox(false)} />}
           <div>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Home/>} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
 
