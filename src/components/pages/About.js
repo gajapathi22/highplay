@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../Banner";
-import handshake from '../../assets/images/handshake-2.png'
+import handshake from '../../assets/images/handshake-5.png'
 
 const About = () =>{
     return(
@@ -75,21 +75,24 @@ const About = () =>{
 
                   
               </diV>
-              <div className="p-10 bg-slate-300">
-                <div className="flex flex-row">
-                  <div className="basis-2/3 flex flex-col gap-4">
-                      <div className="">
-                        <h1 className="text-4xl font-bold">Join us</h1>
-                      </div>
-                      <div>
-                          <h1 className="text-2xl">Whether you're seeking to contribute your own narrative or eager to explore the intricate narratives of others, we extend a warm invitation to become a part of the Humopedia community. Elevate your engagement with diverse perspectives, foster a deeper appreciation for the human experience, and be a catalyst for global connection.</h1>
-                      </div>
-                  </div>
-                  <div className="basis-1/3 flex  ">
-                    <img  className="rounded-3xl " src={handshake}/>
-                  </div>
-                </div>         
-              </div>   
+              <div className="flex flex-row bg-slate-300">
+              
+                  <div className=" basis-2/3 py-20 p-10 flex flex-row">
+                    <div className=" flex flex-col gap-4">
+                        <div className="">
+                          <h1 className="text-4xl font-bold">Join us</h1>
+                        </div>
+                        <div>
+                            <h1 className="text-2xl">Whether you're seeking to contribute your own narrative or eager to explore the intricate narratives of others, we extend a warm invitation to become a part of the Humopedia community. Elevate your engagement with diverse perspectives, foster a deeper appreciation for the human experience, and be a catalyst for global connection.</h1>
+                        </div>
+                    </div>
+                  </div>         
+                
+                <div className="drop-shawdow-lg basis-1/3  ">
+                      <img  className=" pt-10 pr-10 " src={handshake}/>
+                    
+                </div> 
+              </div>
           </div>
 
         </>
