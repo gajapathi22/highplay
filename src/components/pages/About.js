@@ -1,7 +1,7 @@
 import React from "react";
 
 import handshake from '../../assets/images/handshake-5.png';
-import video1 from "../../assets/videos/video2.mp4";
+
 import '../pages/About.css';
 import image4 from '../../assets/images/flower.jpg'
 
@@ -9,12 +9,9 @@ const About = () =>{
     return(
         <>
           <div className="  mt-20 ">
-              <div className="relative flex items-end justify-center">
-                  <video className="w-full h-auto" autoPlay muted loop>
-                      <source src={video1} type="video/mp4" />
-                       
-                  </video>
-                  <div className="flex flex-col gap-5 absolute  px-10 py-10 mx-10  items-center   ">
+              <div className=" flex flex-row p-10  justify-center bg-gray-300">
+
+                  <div className="flex flex-col gap-5   px-10 py-10 mx-10  items-center  ">
                      <div>
                         <h1 className="text-5xl font-mono text-stroke-2 text-gray-800 font-bold ">Welcome to Humopedia</h1>
                      </div>
@@ -23,14 +20,15 @@ const About = () =>{
                      </div>
                 </div>
               </div>
-              <diV className="flex flex-row p-10 pb-12 border border-8 border-b-0 border-indigo-300">
+              <diV className="flex flex-row p-10  bg-orange-300">
     
                  
                     <div className="  basis-1/3">
-                          <img className="h-full transform scale-90 w-full" src={image4}/>
+                          {/* <img className="h-full transform scale-50 w-full" src={image4}/> */}
+                          image
                     </div>
                     
-                      <div className=" basis-2/3 flex flex-col items-start gap-1 justify-center">
+                      <div className=" basis-2/3 flex flex-col items-start gap-1 justify-center bg-blue-300 p-12 my-10  rounded-md">
                         <div>
                             <h1 className="text-7xl text-stroke-2 font-mono font-bold ">Our Mission</h1>
                         </div>
@@ -40,7 +38,7 @@ const About = () =>{
                       </div>
                       
               </diV>
-              <diV className="flex flex-row p-10 bg-white border border-8 border-b-0  border-indigo-300 ">
+              <diV className="flex flex-row p-10 bg-white  bg-green-300 ">
                   <div className="flex justify-center items-center  basis-1/2">
                      <h1 className="text-4xl font-bold ">Vision and Values</h1>
                   </div>
@@ -60,32 +58,7 @@ const About = () =>{
                   </div>
                   
               </diV>
-              <diV className=" flex flex-row ">
-                  <div className="flex flex-col basis-1/6  bg-white">
-                    <div className="basis-1/2 border border-b-4 border-l-8 border-indigo-300 "></div>
-                    <div className="basis-1/2 border border-t-4 border-l-8  border-indigo-300 "></div>
-                  </div>
-                  <div className="flex flex-col  bg-slate-400 border border-8 border-indigo-300 p-8 gap-4">
-                      <diV className=" flex justify-center">
-                        <h1 className="text-4xl font-bold">Exploring Humopedia</h1>
-                      </diV>
-                      <div className="flex justify-center">
-                        <h1 className="text-2xl font-semibold">Our platform invites you to embark on an enriching journey of discovery and connection:</h1>
-                      </div>
-                      <div className="flex justify-center ">
-                        <ul className=" flex flex-col gap-2 list-disc text-xl">
-                          <li>Becoming a Human Book: Share your personal narrative, allowing readers to immerse themselves in your experiences and learn from your journey.</li>
-                          <li>Engaging as a Reader: Immerse yourself in the stories of others, expand your horizons, and engage in meaningful conversations.</li>
-                          <li>Cultivating Understanding: Humopedia is a catalyst for dialogue and understanding, sparking conversations that drive positive change.</li>
-                        </ul>
-                      </div>
-                  </div> 
-                  <div className="flex flex-col bg-white  basis-1/6">
-                     <div className="basis-1/2  border border-b-4 border-r-8 border-indigo-300"></div>
-                     <div className="basis-1/2  border-t-4 border-r-8 border-indigo-300"></div>
-                  </div>  
-              </diV>
-              <div className="flex flex-row bg-white">
+              <div className="flex flex-row bg-blue-300">
               
                   <div className="  py-20 p-10 flex flex-row">
                     <div className=" flex flex-col gap-4">

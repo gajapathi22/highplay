@@ -12,8 +12,6 @@ const Navbar = ({ onSignUpClick,isLoggedIn }) => {
   // };
 
 
-  const [isLoggedin,setisLoggedin] = useState(false);
-
   return (
     <nav className="fixed w-full  top-0  bg-gray-100 py-7 drop-shadow-xl  z-10">
       <div
@@ -26,21 +24,13 @@ const Navbar = ({ onSignUpClick,isLoggedIn }) => {
       >
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="text-black text-2xl font-semibold">
-          Homopedia
+         HIGH PLAY
         </a>
         <ul className="flex space-x-20 ">
           <li><a href="/" className="text-black text-xl font-semibold hover:text-gray-400 ">Home</a></li>
           <li><a href="/about" className="text-black text-xl font-semibold hover:text-gray-400">About</a></li>
-          <li><a href="/contact" className="text-black text-xl font-semibold hover:text-gray-400">Contact</a></li>
-          <li>
-          {isLoggedIn ? (
-              <button className="text-black text-xl font-semibold hover:text-gray-400">Hello User</button>
-            ) : (
-              <button onClick={onSignUpClick} className="text-black text-xl font-semibold hover:text-gray-400">
-                SignUp/Login
-              </button>
-            )}
-          </li>
+          <li><a href="/services" className="text-black text-xl font-semibold hover:text-gray-400">Services</a></li>
+          <li><a href="/contact" className="text-black text-xl font-semibold hover:text-gray-400">Contact</a></li>     
         </ul>
       </div>
     </div>
