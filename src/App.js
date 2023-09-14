@@ -7,7 +7,7 @@ import SignUp from './components/SignUp';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
-import Services from './components/pages/Services';
+import OurWorks from './components/pages/OurWorks';
 import { useState } from 'react';
 
 
@@ -28,8 +28,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home/>} />
               <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/services" element={<Services/>} />
+              <Route path="/ourworks" element={<OurWorks/>} />
+              {/* <Route path="/contact" element={<Contact />} /> */}
             </Routes>
           </div>
 

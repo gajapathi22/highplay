@@ -1,13 +1,11 @@
 import React, { useState, useEffect,Image }  from 'react';
 import './Banner.css'; // Import the custom CSS file
-import image1 from '../../src/assets/images/lib1.jpg';
+import image1 from '../../src/assets/images/lib5.jpg';
 import image2 from '../../src/assets/images/lib2.jpg';
 import image3 from '../../src/assets/images/lib3.jpg';
 
 const images = [
-  image1,
-  image2,
-  image3
+  image1
 ];
 
 const Banner = () => {
@@ -31,30 +29,18 @@ const Banner = () => {
   };
 
   return (
-    <div className='relative p-10 bg-blue-200 mt-20'>
-    <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] ">
-        {images.map((image, index) => (
-        <div className="relative h-[750px]  float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"> 
-        <img
-          key={index}
-          src={image}
-          alt=""
-          className={`block w-full  rounded-3xl ${
-            currentImage === index ? 'opacity-100' : 'opacity-0'
-          }`}
-
-          style={{ maxWidth: '100%',
-                  maxHeight: '100%',
-                  objectFit: 'cover'
-                }}
-        />
-      </div>
-      ))}
-       
+    <div className='relative mt-20  '>
+    <div className="flex flex-row  justify-center items-center  opacity-100   ">        
+          <img src={image1} className='h-min w-screen ' />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white to-white opacity-90"></div>
+          <div className="absolute flex flex-col items-center justify-center gap-4  text-center ">
+            <h1 className='text-blue-600 text-stroke-2 font-vold text-6xl md:text-9xl'>High Play</h1>
+            <p className=' inline-flex h-20 pt-2 overflow-x-hidden animate-type group-hover:animate-type-reverse whitespace-nowrap text-brand-accent will-change-transform text-lg md:text-3xl'> Turning Ideas into Cinematic Excellence.👋</p>
+         </div>
   </div>
   </div>
   );
-};
+}
 
 export default Banner;
 
